@@ -10,8 +10,8 @@ script:
 
 deploy:
     provider: azure_web_apps
-    username: AZURE_WA_USERNAME       # If AZURE_WA_USERNAME isn't set
-    password: AZURE_WA_PASSWORD   # If AZURE_WA_PASSWORD isn't set
+    username: $AZURE_WA_USERNAME       # If AZURE_WA_USERNAME isn't set
+    password: $AZURE_WA_PASSWORD   # If AZURE_WA_PASSWORD isn't set
     site: react-docker       # If AZURE_WA_SITE isn't set
     verbose: true
     #   slot: azure_deployment_slotname       # (optional) If AZURE_WA_SLOT isn't set
